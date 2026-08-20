@@ -13,32 +13,7 @@ The network environment is implemented using **VMware Workstation virtual networ
 ---
 
 ## 2. Lab Architecture
-
-```text
-                         INTERNET
-                             │
-                             │
-                         VMnet8 NAT
-                       192.168.10.0/24
-                             │
-                             │
-                    ┌────────▼────────┐
-                    │    OPNsense     │
-                    │    Firewall     │
-                    └────┬─────┬──────┘
-                         │     │
-              VMnet9     │     │     VMnet10
-          192.168.200.0  │     │  192.168.100.0
-                         │     │
-                    ┌────▼─┐ ┌─▼──────┐
-                    │  LAN │ │  DMZ   │
-                    │      │ │        │
-                    │ Host/│ │ Ubuntu │
-                    │Windows│ │ Agent  │
-                    └──────┘ └────────┘
-```
-
----
+![Interface Assignment](../screenshots/phase-02/Architecture.jpg)
 
 ## 3. VMware Network Configuration
 
