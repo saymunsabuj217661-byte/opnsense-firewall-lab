@@ -69,6 +69,16 @@ Phase 02 will configure:
 
 ## Screenshots
 
-- `screenshots/phase-01/01-opnsense-vm-settings.png`
-- `screenshots/phase-01/02-vmware-network-editor.png`
-- `screenshots/phase-01/07-opnsense-console-login.png`
+## Screenshots
+
+### OPNsense VM Settings
+
+![OPNsense VM Settings](../screenshots/phase-01/01-opnsense-vm-settings.png)
+
+### VMware Virtual Network Editor
+
+![VMware Virtual Network Editor](../screenshots/phase-01/02-vmware-network-editor.png)
+
+### OPNsense Console
+
+![OPNsense Console](../screenshots/phase-01/07-opnsense-console-login.png)
