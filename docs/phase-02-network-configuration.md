@@ -68,7 +68,7 @@ DMZ → em2 → 192.168.100.1/24
 
 ### Screenshot
 
-![Interface Assignment](phase-02/01-interface-assignment.png)
+![Interface Assignment](../screenshots/phase-02/phase-02/01-interface-assignment.png)
 
 ---
 
@@ -92,7 +92,7 @@ End   : 192.168.200.200
 
 ### Screenshot
 
-![LAN IP Configuration](phase-02/02-lan-ip-configured.png)
+![LAN IP Configuration](../screenshots/phase-02/02-lan-ip-configured.png)
 
 ---
 
@@ -108,7 +108,7 @@ The three OPNsense interfaces were configured with separate IP networks:
 
 ### Screenshot
 
-![WAN LAN DMZ IP Configuration](phase-02/03-wan-lan-dmz-ip-configured.png)
+![WAN LAN DMZ IP Configuration](../screenshots/phase-02/03-wan-lan-dmz-ip-configured.png)
 
 ---
 
@@ -124,7 +124,7 @@ The Web GUI was successfully accessed from the LAN environment.
 
 ### Screenshot
 
-![OPNsense Web GUI Dashboard](phase-02/04-opnsense-web-gui-dashboard.png)
+![OPNsense Web GUI Dashboard](../screenshots/phase-02/04-opnsense-web-gui-dashboard.png)
 
 ---
 
@@ -140,7 +140,7 @@ The VMware virtual network adapters were assigned to OPNsense as follows:
 
 ### Screenshot
 
-![WAN LAN DMZ Interface Assignments](phase-02/05-interface-assignments-wan-lan-dmz.png)
+![WAN LAN DMZ Interface Assignments](../screenshots/phase-02/05-interface-assignments-wan-lan-dmz.png)
 
 ---
 
@@ -150,7 +150,7 @@ The OPNsense interface overview was verified to confirm that all three interface
 
 ### Screenshot
 
-![OPNsense Interface Overview](phase-02/06-interface-overview.png)
+![OPNsense Interface Overview](../screenshots/phase-02/06-interface-overview.png)
 
 ---
 
@@ -165,7 +165,7 @@ DHCP services were configured for both the LAN and DMZ networks using DNSmasq.
 
 ### Screenshot
 
-![DNSmasq DHCP Ranges](phase-02/07-dnsmasq-dhcp-ranges.png)
+![DNSmasq DHCP Ranges](../screenshots/phase-02/07-dnsmasq-dhcp-ranges.png)
 
 ---
 
@@ -206,7 +206,7 @@ Packet Loss : 0%
 
 ### Screenshot
 
-![LAN Connectivity Ping](phase-02/08-lan-connectivity-ping.png)
+![LAN Connectivity Ping](../screenshots/phase-02/08-lan-connectivity-ping.png)
 
 ---
 
@@ -230,7 +230,7 @@ Packet Loss      : 0%
 
 ### Screenshot
 
-![WAN Internet Connectivity](phase-02/09-wan-internet-connectivity.png)
+![WAN Internet Connectivity](../screenshots/phase-02/09-wan-internet-connectivity.png)
 
 ---
 
@@ -249,7 +249,7 @@ Both tests were successful.
 
 ### Screenshot
 
-![LAN Internet and DNS Test](phase-02/10-lan-internet-dns-test.png)
+![LAN Internet and DNS Test](../screenshots/phase-02/10-lan-internet-dns-test.png)
 
 ---
 
@@ -267,7 +267,7 @@ Packet Loss : 0%
 
 ### Screenshot
 
-![OPNsense DMZ to Ubuntu](phase-02/11-opnsense-dmz-to-ubuntu.png)
+![OPNsense DMZ to Ubuntu](../screenshots/phase-02/11-opnsense-dmz-to-ubuntu.png)
 
 ---
 
@@ -291,7 +291,7 @@ ping -c 4 8.8.8.8
 
 ### Screenshot
 
-![DMZ Internet Connectivity](phase-02/12-dmz-internet-connectivity.png)
+![DMZ Internet Connectivity](../screenshots/phase-02/12-dmz-internet-connectivity.png)
 
 ---
 
@@ -315,7 +315,7 @@ ping -c 4 google.com
 
 ### Screenshot
 
-![DMZ DNS Connectivity](phase-02/13-dmz-dns-connectivity.png)
+![DMZ DNS Connectivity](../screenshots/phase-02/13-dmz-dns-connectivity.png)
 
 ---
 
