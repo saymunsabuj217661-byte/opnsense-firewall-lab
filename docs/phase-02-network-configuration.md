@@ -68,7 +68,7 @@ DMZ → em2 → 192.168.100.1/24
 
 ### Screenshot
 
-![Interface Assignment](../screenshots/phase-02/phase-02/01-interface-assignment.png)
+![Interface Assignment](../screenshots/phase-02/01-interface-assignment.png)
 
 ---
 
