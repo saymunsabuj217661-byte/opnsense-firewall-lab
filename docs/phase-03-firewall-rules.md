@@ -583,19 +583,6 @@ Therefore:
 
 # 20. Next Phase
 
-After completing the OPNsense firewall and segmentation phase, the next phase will focus on the SOC monitoring environment:
+After completing the firewall rules and network segmentation phase, the next phase will focus on configuring and validating Network Address Translation (NAT) in OPNsense.
 
-```text
-OPNsense Firewall
-       │
-       ├── Firewall Logs
-       │
-       ▼
-Wazuh Server
-       │
-       ├── Windows Agent
-       ├── Ubuntu Agent
-       └── Security Monitoring
-```
-
-The next phase will therefore build the **Wazuh-based centralized SOC monitoring and log analysis environment**.
+The NAT phase will verify outbound NAT for both the LAN and DMZ networks and confirm that internal systems can access the Internet through the OPNsense WAN interface.
