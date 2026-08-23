@@ -490,35 +490,8 @@ ping google.com
 
 The completed OPNsense security architecture is:
 
-```text
-                         INTERNET
-                            │
-                            │
-                       VMnet8 NAT
-                     192.168.10.0/24
-                            │
-                            ▼
-                    ┌───────────────┐
-                    │   OPNsense    │
-                    │   Firewall    │
-                    └───────┬───────┘
-                            │
-               ┌────────────┴────────────┐
-               │                         │
-              LAN                       DMZ
-      192.168.200.0/24          192.168.100.0/24
-               │                         │
-               │                         │
-       Windows VM                  Ubuntu Agent
-      192.168.200.116             192.168.100.10
-               │                         │
-               │                         │
-               │                    Internet ✅
-               │
-               ◄──── DMZ → LAN ❌ BLOCKED
-```
+![Architecture](../screenshots/phase-03/02-architecture.jpg)
 
----
 
 # 17. Phase 03 Completion Checklist
 
