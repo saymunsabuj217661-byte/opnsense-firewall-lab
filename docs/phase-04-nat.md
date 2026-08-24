@@ -259,21 +259,17 @@ This confirms that the DMZ host sends Internet-bound traffic to OPNsense.
 
 The complete traffic flow is:
 
-![NAT and Connectivity Flow](../screenshots/phase-04/NAT and Connectivity Flow.png)
+![NAT and Connectivity Flow](../screenshots/phase-04/NAT%20and%20Connectivity%20Flow.png)
 
 The DMZ host can access the Internet because Source NAT translates the private DMZ address before the traffic leaves through the WAN interface.
-
----
 
 # 10. Security Segmentation
 
 The firewall implements the following security model:
 
-![Security Segmentation](../screenshots/phase-04/Security Segmentation.jpg)
+![Security Segmentation](../screenshots/phase-04/Security%20Segmentation.jpg)
 
 This provides basic network segmentation between the trusted LAN and less-trusted DMZ.
-
----
 
 # 11. Validation Results
 
