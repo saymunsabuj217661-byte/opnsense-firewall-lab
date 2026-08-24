@@ -19,29 +19,7 @@ The main objectives are:
 
 The current lab uses the following network structure:
 
-```text
-                         INTERNET
-                            │
-                            │
-                       VMnet8 NAT
-                    192.168.10.0/24
-                            │
-                            │
-                     ┌──────▼──────┐
-                     │   OPNsense  │
-                     │   Firewall  │
-                     └──────┬──────┘
-                            │
-              ┌─────────────┴─────────────┐
-              │                           │
-             LAN                         DMZ
-       192.168.200.0/24             192.168.100.0/24
-              │                           │
-       192.168.200.1                192.168.100.1
-              │                           │
-       Windows / LAN VM              Ubuntu Agent
-       192.168.200.116              192.168.100.10
-```
+![Architecture](../screenshots/phase-04/03-Architecture.png)
 
 ### Interface Summary
 
@@ -139,24 +117,7 @@ ping -c 4 8.8.8.8
 
 The successful response confirms that traffic is following the expected path:
 
-```text
-Ubuntu DMZ Agent
-       │
-       │ 192.168.100.10
-       ▼
-OPNsense DMZ
-192.168.100.1
-       │
-       ▼
-Source NAT
-       │
-       ▼
-WAN
-192.168.10.x
-       │
-       ▼
-Internet
-```
+![DMZ-to-Internet Connectivity Test](../screenshots/phase-04/DMZ-to-Internet Connectivity Test.png)
 
 ### Result
 
@@ -298,29 +259,7 @@ This confirms that the DMZ host sends Internet-bound traffic to OPNsense.
 
 The complete traffic flow is:
 
-```text
-                    INTERNET
-                       │
-                       ▼
-                  VMnet8 NAT
-                192.168.10.0/24
-                       │
-                       ▼
-                ┌──────────────┐
-                │   OPNsense   │
-                │   Firewall   │
-                └──────┬───────┘
-                       │
-                 Source NAT
-                       │
-                       ▼
-                 DMZ Interface
-                192.168.100.1
-                       │
-                       ▼
-               Ubuntu DMZ Agent
-                192.168.100.10
-```
+![NAT and Connectivity Flow](../screenshots/phase-04/NAT and Connectivity Flow.png)
 
 The DMZ host can access the Internet because Source NAT translates the private DMZ address before the traffic leaves through the WAN interface.
 
@@ -330,23 +269,7 @@ The DMZ host can access the Internet because Source NAT translates the private D
 
 The firewall implements the following security model:
 
-```text
-                         INTERNET
-                            │
-                            ▼
-                       OPNsense
-                       Firewall
-                            │
-              ┌─────────────┴─────────────┐
-              │                           │
-             LAN                         DMZ
-              │                           │
-      192.168.200.0/24             192.168.100.0/24
-              │                           │
-              │                     Internet ALLOWED
-              │
-              ◄────── DMZ → LAN BLOCKED
-```
+![Security Segmentation](../screenshots/phase-04/Security Segmentation.jpg)
 
 This provides basic network segmentation between the trusted LAN and less-trusted DMZ.
 
@@ -431,27 +354,7 @@ The next phase will focus on **DMZ Segmentation and Security Testing**.
 
 The planned workflow is:
 
-```text
-                OPNsense Firewall
-                       │
-          ┌────────────┴────────────┐
-          │                         │
-         LAN                       DMZ
-          │                         │
-          ▼                         ▼
-   Internal Systems          Ubuntu Agent
-          │                         │
-          └──────────┬──────────────┘
-                     │
-              Security Testing
-                     │
-          ┌──────────┴──────────┐
-          │                     │
-     Allowed Traffic       Blocked Traffic
-          │                     │
-          └──────────┬──────────┘
-                     ▼
-              Security Validation
+![Next Phase](../screenshots/phase-04/DMZ Segmentation and Security Testing.jpg)
 ```
 
 After completing the segmentation and security testing phases, the lab will proceed toward the **Wazuh-based SOC monitoring and centralized security log analysis environment**.
