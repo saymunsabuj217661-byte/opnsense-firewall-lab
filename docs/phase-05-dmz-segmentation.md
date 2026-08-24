@@ -212,26 +212,6 @@ Phase-05 successfully validated the DMZ segmentation and firewall security polic
 
 The lab now has:
 
-```text
-                    INTERNET
-                       │
-                       │
-                  OPNsense WAN
-                       │
-                ┌──────┴──────┐
-                │   OPNsense  │
-                │   Firewall  │
-                └──────┬──────┘
-                       │
-             ┌─────────┴─────────┐
-             │                   │
-            LAN                 DMZ
-     192.168.200.0/24    192.168.100.0/24
-             │                   │
-      Windows Host          Ubuntu Agent
-     192.168.200.116       192.168.100.10
-             │                   │
-             └────── BLOCK ──────┘
-```
+![Architecture](../screenshots/phase-05/04-Architecture.png)
 
 The next phase will focus on **security testing and monitoring preparation**, leading toward the Wazuh-based centralized SOC monitoring environment.
