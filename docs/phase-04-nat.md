@@ -353,6 +353,7 @@ Therefore:
 The next phase will focus on **DMZ Segmentation and Security Testing**.
 
 The planned workflow is:
-![Next Phase](../screenshots/phase-04/DMZ Segmentation and Security Testing.jpg)
+
+![Next Phase](../screenshots/phase-04/DMZ%20Segmentation%20and%20Security%20Testing.jpg)
 
 After completing the segmentation and security testing phases, the lab will proceed toward the **Wazuh-based SOC monitoring and centralized security log analysis environment**.
