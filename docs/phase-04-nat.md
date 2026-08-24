@@ -116,8 +116,7 @@ ping -c 4 8.8.8.8
 ```
 
 The successful response confirms that traffic is following the expected path:
-
-![DMZ-to-Internet Connectivity Test](../screenshots/phase-04/DMZ-to-Internet Connectivity Test.png)
+![DMZ-to-Internet Connectivity Test](../screenshots/phase-04/DMZ-to-Internet%20Connectivity%20Test.png)
 
 ### Result
 
